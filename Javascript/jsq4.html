@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+Ques4
+</title>
+</head>
+<body>
+
+<input type="text" id="text1" style="display:none">
+<input type="submit" value="Submit" id="but1" onClick="return func_name();">
+
+<script language="JavaScript">
+function func_name()
+{
+var n=prompt("Enter name:");
+document.getElementById("text1").style.display="block";
+document.getElementById("text1").value= n;
+}
+</script>
+</body>
+</html>
