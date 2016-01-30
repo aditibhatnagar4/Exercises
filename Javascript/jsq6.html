@@ -15,15 +15,21 @@ Age:<input type="text" id="text2"><br>
 <script language="JavaScript">
 function validate()
 {
-if(document.getElementById("text1").value=="" || document.getElementById("text2").value<18 )
+if(document.getElementById("text1").value=="" || document.getElementById("text2").value=="" )
 {
-alert("Form not submitted");
+alert("Form not submitted.Name/age cannot be blank!");
 return false;
 }
-else
+else if(document.getElementById("text2").value>=18)
 {
 alert("Form submitted"); 
 return true;
+
+}
+else
+{
+alert("Form not submitted.Age is incorrect."); 
+return false;
 }
 }
 </script>
