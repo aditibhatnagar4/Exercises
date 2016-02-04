@@ -16,7 +16,7 @@ ul.b {
 }
 </style>
 </head>
-<body class="f1">
+<body><div class="f1">
 <ul>
 <li>Comedies
 	<ul class="a">
