@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+Ques6
+</title>
+</head>
+<body>
+<form method="get" target="_self" onsubmit="return validate()">
+Name:<input type="text" id="text1"><br>
+Age:<input type="text" id="text2"><br>
+
+<input type="submit" value="Submit" onsubmit="validate();">
+</form>
+<script language="JavaScript">
+function validate()
+{
+if(document.getElementById("text1").value=="" || document.getElementById("text2").value=="" )
+{
+alert("Form not submitted.Name/age cannot be blank!");
+return false;
+}
+else if(document.getElementById("text2").value>=18)
+{
+alert("Form submitted"); 
+return true;
+
+}
+else
+{
+alert("Form not submitted.Age is incorrect."); 
+return false;
+}
+}
+</script>
+</body>
+</html>
