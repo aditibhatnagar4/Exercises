@@ -1,4 +1,9 @@
-list=[0,1,2,3,4,5]
-println list.findAll{
-it%2==0
+list=[3,2,5,6,7,4]
+List even=[]
+list.eachWithIndex{p,index ->
+  if((index+1)%2==0)
+    {
+         even.add(p)  
+    }
 }
+println list-even

@@ -8,17 +8,19 @@ class Stack
    l.add(x)
    println x+" pushed"
   }
-  void pop()
+  
+  def pop()
   {
     if(top>=0)
     {
-    println l[top]+" popped"
-    l.remove(top)
+    int index=top
     top--
+    return l.remove(index)
     }
     else
-    println "Empty Stack"
+    return "Stack is empty"
   }
+  
   void top()
   {  
      if(top>=0)
@@ -33,8 +35,8 @@ obj.push("Aditi")
 obj.push("Aarushi")
 obj.push("Aashna");
 obj.top();
-obj.pop();
+println obj.pop()+" popped";
 obj.top();
-obj.pop();
-obj.pop();
-obj.pop();
+println obj.pop()+" popped";
+println obj.pop()+" popped";
+println obj.pop()+" popped";

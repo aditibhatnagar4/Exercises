@@ -1,4 +1,4 @@
-
+.width-100{ width:100% }
 .margin-top{ margin-top:20px; }
 .margin-top-7{ margin-top:7px; }
 .margin-top-5{ margin-top:5px; }
@@ -15,4 +15,11 @@
 .font-size-25{ font-size:25px; }
 .font-size-20{ font-size:20px; }
 
-.text-color{ color:blue; }
+.text-color{ color:blue !important }
+
+.spec_table td {
+margin-left: -20px;
+font-size: .9em;
+line-height: 1.1em;
+border-top: none !important;
+}

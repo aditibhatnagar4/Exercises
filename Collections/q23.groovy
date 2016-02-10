@@ -17,9 +17,9 @@ List empList=[ new Employee(name:"a",age:20,departmentName:"dept1",salary:4000),
 
 println "a) Group the employees on the basis of the bracket in which their salary falls. The ranges are 0-5000, 5001 and 10000, and so on." 
 println empList.groupBy{
-if(it.salary<5000 && it.salary>0)
+if(it.salary<=5000 && it.salary>=0)
 "0-5000"
-else if(it.salary>5001 && it.salary<10000)
+else if(it.salary>=5001 && it.salary<=10000)
 "5001-10000"
 else
 ">10000"
