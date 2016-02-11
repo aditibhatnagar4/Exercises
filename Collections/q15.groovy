@@ -1,47 +1,32 @@
 class Stack
 {
   List l=[];
-  int top=-1
-  void push(x)
+  
+  Boolean push(String x)
   {
-//   top++;
-//   l.add(x)
-//   println x+" pushed"
-l.push(x)
+     return l.push(x)
 
   }
   
-  def pop()
+  String pop()
   {
-//    if(top>=0)
-//    {
-//    int index=top
-//    top--
-//    return l.remove(index)
-//    }
-//    else
-//    return "Stack is empty"
-return l.pop()
+      return l.pop()
 
   }
   
-  def top()
+  String top()
   {  
-//     if(top>=0)
-//     println l.last()
-//     else
-//     println "Empty Stack"
-return l.head()
+       return l.last()
   }
 }
 Stack obj=new Stack();
 //obj.top();
-obj.push("Aditi")
-obj.push("Aarushi")
-obj.push("Aashna");
-obj.top();
+println obj.push("Aditi")
+println obj.push("Aarushi")
+println obj.push("Aashna");
+println "top->"+obj.top();
 println obj.pop()+" popped";
-obj.top();
+println "top->"+obj.top();
 println obj.pop()+" popped";
 //println obj.pop()+" popped";
 println obj.pop()+" popped";

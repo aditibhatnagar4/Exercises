@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.im.test.UserSpec</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.im.test.UserSpec</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.im.test.html">com.im.test</a> &gt; UserSpec</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">20</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">7</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.220s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">65%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="For User with (Aditi, Bhatnagar) the name should be dislayed as '#Error:fullName' "></a>
+<h3 class="failures">For User with (Aditi, Bhatnagar) the name should be dislayed as '#Error:fullName' </h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+user.displayName() == displayName
+|    |             |  |
+|    |             |  &quot;&quot;
+|    |             false
+|    |             17 differences (0% similarity)
+|    |             (MsAditi Bhatnagar)
+|    |             (-----------------)
+|    MsAditi Bhatnagar
+com.im.test.User(firstName:Aditi, lastName:Bhatnagar)
+
+	at com.im.test.UserSpec.For User with (#firstName, #lastName) the name should be dislayed as '#fullName' (UserSpec.groovy:41)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="For User with (Aditi, null) the name should be dislayed as '#Error:fullName' "></a>
+<h3 class="failures">For User with (Aditi, null) the name should be dislayed as '#Error:fullName' </h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+user.displayName() == displayName
+|    |             |  |
+|    MsAditi null  |  MsAditi
+|                  false
+|                  5 differences (58% similarity)
+|                  MsAditi( null)
+|                  MsAditi(-----)
+com.im.test.User(firstName:Aditi, lastName:null)
+
+	at com.im.test.UserSpec.For User with (#firstName, #lastName) the name should be dislayed as '#fullName' (UserSpec.groovy:41)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="For User with (null, Bhatnagar) the full name should be '' "></a>
+<h3 class="failures">For User with (null, Bhatnagar) the full name should be '' </h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+user.getFullName() == fullName
+|    |             |  |
+|    null Bhatnagar|  &quot;&quot;
+|                  false
+|                  14 differences (0% similarity)
+|                  (null Bhatnagar)
+|                  (--------------)
+com.im.test.User(firstName:null, lastName:Bhatnagar)
+
+	at com.im.test.UserSpec.For User with (#firstName, #lastName) the full name should be '#fullName' (UserSpec.groovy:22)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="For User with (null, Bhatnagar) the name should be dislayed as '#Error:fullName' "></a>
+<h3 class="failures">For User with (null, Bhatnagar) the name should be dislayed as '#Error:fullName' </h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+user.displayName() == displayName
+|    |             |  |
+|    |             |  MsBhatnagar
+|    |             false
+|    |             5 differences (68% similarity)
+|    |             Ms(null )Bhatnagar
+|    |             Ms(-----)Bhatnagar
+|    Msnull Bhatnagar
+com.im.test.User(firstName:null, lastName:Bhatnagar)
+
+	at com.im.test.UserSpec.For User with (#firstName, #lastName) the name should be dislayed as '#fullName' (UserSpec.groovy:41)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="For User with (null, null) the full name should be '' "></a>
+<h3 class="failures">For User with (null, null) the full name should be '' </h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+user.getFullName() == fullName
+|    |             |  |
+|    null null     |  &quot;&quot;
+|                  false
+|                  9 differences (0% similarity)
+|                  (null null)
+|                  (---------)
+com.im.test.User(firstName:null, lastName:null)
+
+	at com.im.test.UserSpec.For User with (#firstName, #lastName) the full name should be '#fullName' (UserSpec.groovy:22)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="For User with (null, null) the name should be dislayed as '#Error:fullName' "></a>
+<h3 class="failures">For User with (null, null) the name should be dislayed as '#Error:fullName' </h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+user.displayName() == displayName
+|    |             |  |
+|    Msnull null   |  &quot;&quot;
+|                  false
+|                  11 differences (0% similarity)
+|                  (Msnull null)
+|                  (-----------)
+com.im.test.User(firstName:null, lastName:null)
+
+	at com.im.test.UserSpec.For User with (#firstName, #lastName) the name should be dislayed as '#fullName' (UserSpec.groovy:41)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="Get income groups"></a>
+<h3 class="failures">Get income groups</h3>
+<span class="code">
+<pre>Condition not satisfied:
+
+user.getIncomeGroup() == group
+|    |                |  |
+|    MiddleClass      |  null
+|                     false
+|                     9 differences (18% similarity)
+|                     (Midd)l(eC)l(ass)
+|                     (nu--)l(--)l(---)
+com.im.test.User(firstName:null, lastName:null)
+
+	at com.im.test.UserSpec.Get income groups(UserSpec.groovy:129)
+</pre>
+</span>
+<span class="code">
+<pre>Condition not satisfied:
+
+user.getIncomeGroup() == group
+|    |                |  |
+|    MiddleClass      |  Higher MiddleClass
+|                     false
+|                     7 differences (61% similarity)
+|                     (-------)MiddleClass
+|                     (Higher )MiddleClass
+com.im.test.User(firstName:null, lastName:null)
+
+	at com.im.test.UserSpec.Get income groups(UserSpec.groovy:129)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">CancelPurchase</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">For User with (Aditi, Bhatnagar) the full name should be 'Aditi Bhatnagar' </td>
+<td>0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">For User with (Aditi, Bhatnagar) the name should be dislayed as '#Error:fullName' </td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">For User with (Aditi, Bhatnagar) the name should be dislayed as '#Error:fullName' </td>
+<td>0.002s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">For User with (Aditi, null) the name should be dislayed as '#Error:fullName' </td>
+<td>0.002s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">For User with (null, Bhatnagar) the full name should be '' </td>
+<td>0.002s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">For User with (null, Bhatnagar) the name should be dislayed as '#Error:fullName' </td>
+<td>0.003s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">For User with (null, null) the full name should be '' </td>
+<td>0.008s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">For User with (null, null) the name should be dislayed as '#Error:fullName' </td>
+<td>0.002s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">Get income groups</td>
+<td>0.005s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">GetSortedInterestedInCategories</td>
+<td>0.053s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Purchase</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing encrypt password for 'test' </td>
+<td>0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing encrypt password for 'testqqq' </td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">User's password validated[0]</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">User's password validated[1]</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">User's password validated[2]</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">User's password validated[3]</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">User's password validated[4]</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test that reset password is resetting password and sending email</td>
+<td>0.106s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>23:49:11.863 [Test worker] INFO  com.im.test.UserSpec - Create a user 
+23:49:11.867 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
+23:49:11.871 [Test worker] INFO  com.im.test.UserSpec - Create a user 
+23:49:11.874 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
+23:49:11.879 [Test worker] INFO  com.im.test.UserSpec - Create a user 
+23:49:11.879 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
+23:49:11.882 [Test worker] INFO  com.im.test.UserSpec - Create a user 
+23:49:11.882 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
+23:49:11.882 [Test worker] INFO  com.im.test.UserSpec - Create a user 
+23:49:11.883 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
+23:49:11.884 [Test worker] INFO  com.im.test.UserSpec - Create a user 
+23:49:11.885 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
+23:49:11.887 [Test worker] INFO  com.im.test.UserSpec - Create a user 
+23:49:11.887 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
+23:49:11.889 [Test worker] INFO  com.im.test.UserSpec - Create a user 
+23:49:11.890 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
+23:49:12.005 [Test worker] INFO  com.im.test.UserSpec - encryptPassword called
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.10</a> at 10 Feb, 2016 11:49:12 PM</p>
+</div>
+</div>
+</body>
+</html>

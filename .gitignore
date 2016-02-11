@@ -5,4 +5,4 @@ target/
 *.iml
 .classpath
 .project
-
+spock-groovy-demo/build
