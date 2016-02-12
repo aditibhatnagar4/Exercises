@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="878eb072-5dde-4ea2-97d4-ccaaca699e9c" name="Default" comment="" />
+    <list default="true" id="878eb072-5dde-4ea2-97d4-ccaaca699e9c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/im/test/TransactionSpec.groovy" afterPath="$PROJECT_DIR$/test/com/im/test/TransactionSpec.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/im/test/UserSpec.groovy" afterPath="$PROJECT_DIR$/test/com/im/test/UserSpec.groovy" />
+    </list>
     <ignored path="spock-groovy-demo.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,8 +31,8 @@
           <file leaf-file-name="UserSpec.groovy" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/com/im/test/UserSpec.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3498452">
-                  <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.79102165">
+                  <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
                   <folding>
                     <element signature="e#21#53#0" expanded="true" />
                   </folding>
@@ -44,8 +47,8 @@
           <file leaf-file-name="TransactionSpec.groovy" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/com/im/test/TransactionSpec.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.79102165">
-                  <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+                <state vertical-scroll-proportion="0.95356035">
+                  <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -614,15 +617,15 @@
       <workItem from="1455102244163" duration="2654000" />
       <workItem from="1455104911796" duration="717000" />
       <workItem from="1455120677972" duration="5271000" />
-      <workItem from="1455261378781" duration="570000" />
+      <workItem from="1455261378781" duration="1322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10466000" />
+    <option name="totallyTimeSpent" value="11218000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="7" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -855,6 +858,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.044843048">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding>
+            <marker date="1455011857230" expanded="true" signature="73:583" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -931,21 +937,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/im/test/UserSpec.groovy">
+    <entry file="file://$PROJECT_DIR$/test/com/im/test/TransactionSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3498452">
-          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#53#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.95356035">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/im/test/TransactionSpec.groovy">
+    <entry file="file://$PROJECT_DIR$/test/com/im/test/UserSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.79102165">
-          <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
-          <folding />
+          <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+          <folding>
+            <element signature="e#21#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -69,7 +69,6 @@ class UserSpec extends Specification {
     }
 
 
-
     def "test that reset password is resetting password and sending email"() {
         User user = [encyryptPassword: { log.info "encryptPassword called" }] as User
 
@@ -85,23 +84,15 @@ class UserSpec extends Specification {
 
 
     @Unroll("Testing encrypt password for '#password' ")
-    // @ConfineMetaClassChanges(User)
+
     def "encrypt password"() {
         setup:
         User user = new User()
-//        user.metaClass.static.isValidPassword = { String str ->
-//            println "...."
-//            true
-//        }
 
         user.passwordEncrypterService = Mock(PasswordEncrypterService) {
             encrypt(_) >> { result }
         }
 
-//        def mockedPasswordEncrypterService = Mock(PasswordEncrypterService)
-
-//        user.passwordEncrypterService = mockedPasswordEncrypterService
-//        mockedPasswordEncrypterService.encrypt(_) >> { result }
 
         when:
         String output = user.encyryptPassword(password)
@@ -113,10 +104,6 @@ class UserSpec extends Specification {
         password  | result
         "test"    | null
         "testqqq" | "ok"
-//
-//        where:
-//        password << ["test", "test1234"]
-
 
     }
 
@@ -137,6 +124,7 @@ class UserSpec extends Specification {
 
 
     }
+
     def "Purchase"() {
         given:
         User user = new User(purchasedProducts: [])
