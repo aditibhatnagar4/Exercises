@@ -29,7 +29,7 @@ class UserSpec extends Specification {
 
 
     @Unroll
-    def "For User with (#firstName, #lastName) the name should be dislayed as 'Mr/Ms#fullName' "() {
+    def "For User with (#firstName, #lastName) the name should be dislayed as 'Mr/Ms#displayName' "() {
 
         log.info "Create a user "
         User user = new User(firstName: firstName, lastName: lastName, gender: gender)
@@ -50,7 +50,7 @@ class UserSpec extends Specification {
 
 
     @Unroll
-    def "User's password validated"() {
+    def "User's password validated #sno"() {
         given: "A user's password"
         User user = new User(password: password)
 
@@ -58,12 +58,12 @@ class UserSpec extends Specification {
         user.isValidPassword(user.password) == result
 
         where:
-        password | result
-        123456   | false
-        1234567  | false
-        12345678 | true
-        null     | false
-        ""       | false
+        sno | password | result
+        1   | 123456   | false
+        2   | 1234567  | false
+        3   | 12345678 | true
+        4   | null     | false
+        5   | ""       | false
     }
 
 
@@ -106,7 +106,7 @@ class UserSpec extends Specification {
     }
 
     @Unroll
-    def "Get income groups"() {
+    def "for #incomePerMonth the income group should be #group"() {
         given: "A user"
         User user = new User(incomePerMonth: incomePerMonth)
 
@@ -117,7 +117,7 @@ class UserSpec extends Specification {
         incomePerMonth | group
         5000           | "MiddleClass"
         0              | "MiddleClass"
-        null           | "null"
+        null           | null
         1000           | "Higher MiddleClass"
 
 
@@ -134,7 +134,7 @@ class UserSpec extends Specification {
         user.purchase(product)
 
         then:
-        user.purchasedProducts.contains(product) == true
+        user.purchasedProducts.contains(product)
     }
 
     def "CancelPurchase"() {
@@ -148,7 +148,7 @@ class UserSpec extends Specification {
         user.cancelPurchase(product)
 
         then:
-        user.purchasedProducts.contains(product) == false
+        !user.purchasedProducts.contains(product)
     }
 
     def "GetSortedInterestedInCategories"() {

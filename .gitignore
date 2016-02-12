@@ -41,7 +41,7 @@
 #Non-sense Files
 .classpath
 .project
-/.slcach
+/.slcache
 
 spock-groovy-demo/UnitTestingBootCamp.pptx
 spock-groovy-demo/UnitTestingBootCamp.pdf
