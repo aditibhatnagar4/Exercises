@@ -31,7 +31,7 @@ class UserSpec extends Specification {
 
 
     @Unroll
-    def "For User with (#firstName, #lastName) the name should be dislayed as '#fullName' "() {
+    def "For User with (#firstName, #lastName) the name should be dislayed as 'Mr/Ms#fullName' "() {
 
         log.info "Create a user "
         User user = new User(firstName: firstName, lastName: lastName, gender: gender)
@@ -120,7 +120,7 @@ class UserSpec extends Specification {
 
     }
 
-
+    @Unroll
     def "Get income groups"() {
         given: "A user"
         User user = new User(incomePerMonth: incomePerMonth)

@@ -1,8 +1,51 @@
 *~
 *.class
-.idea/
-target/
+
+
+# web application files
+/web-app/WEB-INF/classes
+
+# default HSQL database files for production mode
+/prodDb.*
+
+# general HSQL database files
+*Db.properties
+*Db.script
+
+# logs
+/stacktrace.log
+/test/reports
+/logs
+
+# project release file
+/*.war
+
+# plugin release files
+/*.zip
+/plugin.xml
+
+# older plugin install locations
+/plugins
+/web-app/plugins
+
+# "temporary" build files
+/target
+
+
+#iml files
 *.iml
+
+#idea folder
+/.idea
+
+#Non-sense Files
 .classpath
 .project
+/.slcach
+
+spock-groovy-demo/UnitTestingBootCamp.pptx
+spock-groovy-demo/UnitTestingBootCamp.pdf
+spock-groovy-demo/spock-groovy-demo.ipr
+spock-groovy-demo/spock-groovy-demo.iws
 spock-groovy-demo/build
+spock-groovy-demo/.gradle

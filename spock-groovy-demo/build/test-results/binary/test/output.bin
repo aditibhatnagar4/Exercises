@@ -1,34 +1,0 @@
-
-	G23:49:11.863 [Test worker] INFO  com.im.test.UserSpec - Create a user 
-
-	R23:49:11.867 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
-
-G23:49:11.871 [Test worker] INFO  com.im.test.UserSpec - Create a user 
-
-R23:49:11.874 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
-
-G23:49:11.879 [Test worker] INFO  com.im.test.UserSpec - Create a user 
-
-R23:49:11.879 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
-
-G23:49:11.882 [Test worker] INFO  com.im.test.UserSpec - Create a user 
-
-R23:49:11.882 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
-
-G23:49:11.882 [Test worker] INFO  com.im.test.UserSpec - Create a user 
-
-R23:49:11.883 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
-
-G23:49:11.884 [Test worker] INFO  com.im.test.UserSpec - Create a user 
-
-R23:49:11.885 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
-
-G23:49:11.887 [Test worker] INFO  com.im.test.UserSpec - Create a user 
-
-R23:49:11.887 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
-
-G23:49:11.889 [Test worker] INFO  com.im.test.UserSpec - Create a user 
-
-R23:49:11.890 [Test worker] INFO  com.im.test.UserSpec - Checking user's full name
-
-O23:49:12.005 [Test worker] INFO  com.im.test.UserSpec - encryptPassword called
