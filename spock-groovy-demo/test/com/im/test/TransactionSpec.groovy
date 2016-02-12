@@ -1,8 +1,5 @@
 package com.im.test
 
-import jdk.nashorn.internal.ir.annotations.Ignore
-import spock.lang.IgnoreRest
-import spock.lang.Shared
 import spock.lang.Specification
 import spock.lang.Unroll
 

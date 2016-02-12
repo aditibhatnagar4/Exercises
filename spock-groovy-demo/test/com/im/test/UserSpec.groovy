@@ -1,11 +1,9 @@
 package com.im.test
 
 import groovy.util.logging.Slf4j
-import spock.lang.Ignore
 import spock.lang.Specification
 import spock.lang.Unroll
-import spock.util.mop.ConfineMetaClassChanges
-import sun.security.util.Password
+
 
 @Slf4j
 class UserSpec extends Specification {
