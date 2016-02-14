@@ -51,7 +51,8 @@ class UserSpec extends Specification {
 
     @Unroll
     def "User's password validated #sno"() {
-        given: "A user's password"
+        given:
+        log.info "A user's password"
         User user = new User(password: password)
 
         expect:
@@ -107,7 +108,8 @@ class UserSpec extends Specification {
 
     @Unroll
     def "for #incomePerMonth the income group should be #group"() {
-        given: "A user"
+        given:
+        log.info "A user"
         User user = new User(incomePerMonth: incomePerMonth)
 
         expect:

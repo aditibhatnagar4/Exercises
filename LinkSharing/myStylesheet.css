@@ -18,8 +18,5 @@
 .text-color{ color:blue !important }
 
 .spec_table td {
-margin-left: -20px;
-font-size: .9em;
-line-height: 1.1em;
 border-top: none !important;
 }
